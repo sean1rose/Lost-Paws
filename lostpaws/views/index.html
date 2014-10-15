@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script type="text/css" src="bower_components/bootstrap/dist/css/bootstrap.css"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIWk1xd_Z9gvwEyNBUHxW8kApe2H3XO1c">
+    </script>
+    <script type="text/javascript" src="javascripts/main.js"></script>     
+  </head>
+
+  <body>
+    <div class="col-md-4" id="left-hand-side">
+      <div>
+        <p><h1>LOST PAWS</h1></p>
+          Submit Your Address/Zip Code to Locate Your Lost Pet: <br><br>
+          <input id='zipCode'></input>
+          <button class="submitButton">Submit</button>
+        <br><br>
+      </div>
+      <br>
+      <br>
+      <div>
+        <p><h1>FOUND PAWS</h1></p>
+          If You've Found a Lost Pet, Let Us Know... <br><br>
+          <form>
+            <input class="found" id="username" type="text"> Your Name</input><br><br>
+            <input class="found" id="email" type="text"> Your Contact Info</input><br><br>
+            <input class="found" id="petname" type="text"> Pet's Name</input><br><br>
+            <input class="found" id="zipcodefound" type="text"> Address Where Pet Found</input><br><br>
+            <button id="foundSubmit" value="Submit">Submit</button>
+          </form>
+      </div>
+    </div>
+    <div class="col-md-8" id="map-canvas"></div>
+  </body>
+</html>

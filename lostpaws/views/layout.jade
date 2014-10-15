@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    style(type="text/css")
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(type="text/javascript", src="bower_components/underscore/underscore-min.js")
+    script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIWk1xd_Z9gvwEyNBUHxW8kApe2H3XO1c")
+          
+    script(type="text/javascript", src="javascripts/main.js")
+  body
+    #left-hand-side.col-md-3
+      p
+        h1 LOST PAWS
+      | Submit Your Address/Zip Code to Find Your Lost Pet:
+      br
+      br
+      input#zipCode(type="text")
+      button.submitButton(type="text")
+      | Submit
+      br
+      br
+    #map-canvas.col-md-9
+    block content
